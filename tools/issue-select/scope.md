@@ -36,4 +36,4 @@ you want to avoid. The skill uses this only to RANK the issues your
 rubric accepts, never to change a verdict: fit cannot rescue an issue
 your rubric rejects, and cannot sink one it accepts. -->
 
-Python and Java, advanced with GitHub, I'd like bugs or documentation, and I want to work on complicated projects.
+Python and Java, intermediate with GitHub, I'd like bugs or documentation, and I want to work on something thata's more intermediate friendly.
