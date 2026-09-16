@@ -36,7 +36,7 @@ will fail eval issues designed around that family.
 |---|---|---|---|
 | project-active | repo-facts block: last push to any branch, last 5 default-branch commits, and maintainer first-response sample | Pass if the repo had a push within the last 90 days AND at least one of the five sampled issues has a maintainer/owner/member/collaborator response within 30 days | required |
 | scope-fits | issue body and issue labels in the bundle | Pass if the issue describes a concrete bug, documentation improvement, or reasonably bounded feature that a newcomer could work on without requiring a major redesign of the project | required |
-| no-one-else-on-it | repo-facts block: assignees and linked PRs, plus comment thread | Pass if the issue has no assignee, no linked PR, and no comment indicating that another contributor is actively working on the issue | required |
+| no-one-else-on-it | repo-facts block: assignees and linked PRs, plus comment thread | Pass if the issue has no assignee, no linked PR, and no comment from a contributor indicating that they are actively implementing the issue; ordinary student claim comments do not count against the issue | required |
 
 ## Verdict rule
 
