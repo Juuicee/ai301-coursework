@@ -72,6 +72,11 @@ explain why your rubric read it that way.]
 Then say why it reads that way — what you revised to get there, or what you rejected in
 favour of it.]
 
+diagnosis-grounded
+
+Why this check reads this way:
+
+The diagnosis check is intended to ensure that the plan is based on the concrete evidence in the issue rather than an unsupported assumption about the root cause. The plan should identify what behavior is actually reported and quote the evidence it relies on before proposing implementation work.
 
 **Trade-offs**
 
@@ -79,6 +84,8 @@ favour of it.]
 result it changes, a canary you re-ran with `--only`, a case you accept it will miss, or a
 stated reason nothing changed elsewhere. "Nothing changed, and here is how I know" earns
 the point in full when the reason follows.]
+
+The diagnosis check prioritizes evidence-based planning over allowing a contributor to state an assumed root cause as fact. This can leave a plan less specific when the issue does not establish the exact implementation cause, but that is intentional: the implementation cause should be verified during the investigation rather than invented in the plan.
 
 ---
 
