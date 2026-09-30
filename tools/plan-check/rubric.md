@@ -45,11 +45,17 @@ family will fail eval packages designed around that family.
 
 | Check | Evidence | Pass condition | Weight |
 |---|---|---|---|
-|  |  |  |  |
+| diagnosis-grounded | Diagnosis section of `plan.md`; issue context and quoted issue evidence | Pass if the diagnosis identifies the concrete behavior or problem reported by the issue, quotes or directly cites the evidence relied on, and distinguishes observed evidence from an unverified suspected cause. | required |
+| scope-bounded | Scope section and Files to touch section of `plan.md`, compared with the issue context | Pass if the plan clearly states what will change and what will not change, names the files or areas expected to change, and keeps the proposed work within the issue's stated problem. | required |
+| approach-actionable | Approach section of `plan.md` | Pass if the approach gives concrete implementation steps that another contributor could follow, including how the proposed change will address the diagnosed behavior without relying on an unsupported root-cause claim. | required |
+| test-plan-complete | Test plan section of `plan.md` | Pass if the plan identifies the relevant reproduction/test steps, explains what will be run before and after the change, and states observable expected results that would demonstrate whether the fix works. | required |
+| risks-and-unknowns | Risks and unknowns section of `plan.md` | Pass if the plan identifies meaningful uncertainties or regression risks relevant to the proposed change and does not present unverified assumptions as established facts. | required |
+| thread-and-conventions | `comment.md`; issue context; repository conventions and contribution guidance | Pass if the draft comment accurately represents the plan, is specific to the issue rather than saying "same approach as above," and follows applicable repository/course conventions, including any required disclosure. | required |
 
 ## Verdict rule
 
-<!-- State how the grades above combine into accept or reject, and how
-unclear is treated. Example shape (write your own): "accept if every
-required check passes; preferred checks never change the verdict;
-unclear counts as fail." -->
+A plan is ready only if every required check passes.
+
+An unclear check is treated as a failure.
+
+If any required check fails or is unclear, the verdict is `reject` (hold). If every required check passes, the verdict is `accept` (ready).
