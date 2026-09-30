@@ -21,11 +21,17 @@ the only thing that ties it to you. Several students may plan the same
 house issue, so this is what keeps their comments off your score and
 yours off theirs.]
 
+Juuicee
+
 **Plan comment**
 
 [Link to the comment where you posted your plan on the issue. Use the comment's own
 permalink. **Then paste the text of that comment underneath the link** — the pasted text is
 what this field is graded on, so copy across what you actually posted.]
+
+I investigated Issue #70 based on the reported behavior that ReadmeParser.parse() returns zero sections for a conventional README using # and ## headings.
+
+The issue identifies ingestion/parsers/readme_parser.py and tests/unit/test_readme_parser.py as the relevant implementation and test locations. It also notes that the covering test is currently marked @pytest.mark.xfail for manifest ID H-03.
 
 ---
 
@@ -65,6 +71,7 @@ explain why your rubric read it that way.]
 [Quote one check from the `rubric.md` you uploaded to `tools/plan-check/`, exactly as it reads now.
 Then say why it reads that way — what you revised to get there, or what you rejected in
 favour of it.]
+
 
 **Trade-offs**
 
