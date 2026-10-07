@@ -42,6 +42,10 @@ plan, or less with no note). The description's fidelity claims read
 against the diff live here too: a description claiming more or less
 than the diff delivers is silent drift, not a comms problem. -->
 
+**Where it lives:** In eval mode, read the plan-context block's scope pair, test plan, and deviation notes, then compare them with the candidate PR's changed files, commits, diff, title, and description. In live mode, read `plan.md` and its deviation notes, the branch diff, and the draft PR title and description.
+
+**What good looks like:** Every changed file falls inside the plan's stated boundary or is explained by a deviation note. The PR title and description describe what the diff actually delivers and do not claim work that is absent or conceal work that is present.
+
 ## Test evidence (harness category: not-tested)
 
 <!-- Where the PR shows its proof: the test-evidence section's
@@ -50,12 +54,20 @@ steps, and the outcome of the repo's own checks or suite. What
 decisive looks like (an observable behavior named, the expected-after
 stated, the checks' outcome visible) next to "tests pass". -->
 
+**Where it lives:** In eval mode, read the package's test-evidence section and compare its before/after reproduction against the plan's test plan and the repository's stated checks. In live mode, read the captured test output, reproduction steps, plan test plan, PR evidence, and the repository's own checks.
+
+**What good looks like:** The evidence names an observable behavior, gives the expected-after result, and shows the outcome of the relevant checks. A claim that tests passed without observable evidence is not sufficient.
+
 ## Diff quality (harness category: unreviewable)
 
 <!-- Where the change itself lives: the unified diff and the commit
 list. What a reviewable change looks like (the fix visible, nothing
 unrelated riding along) and the debris tells: debug leftovers, dead
 code, commented-out blocks, formatting churn, drive-by edits. -->
+
+**Where it lives:** Read the candidate PR's unified diff and commit list. In live mode, read the branch diff against the repository's default branch and the commits on that branch.
+
+**What good looks like:** The intended fix is visible and unrelated changes are absent. Debug leftovers, dead code, commented-out code, formatting churn, and drive-by edits are not mixed into the change.
 
 ## Standards and comms (harness category: standards-wall)
 
@@ -66,3 +78,7 @@ stated sections filled with real content, the disclosure present,
 explicit maintainer direction in the thread engaged. What compliant
 looks like next to boilerplate or a visibly ignored ask. (Whether
 the description's claims match the diff is plan fidelity, above.) -->
+
+**Where it lives:** In eval mode, read the repo-facts block's PR-template asks, contributing instructions, stated policy, and AI-use disclosure requirements, then compare them with the PR description and supplied communication. In live mode, read the repository's PR template, `CONTRIBUTING.md`, stated policy, and the draft PR title and description.
+
+**What good looks like:** Every required PR-template section contains real, relevant content, required disclosures are present, and explicit maintainer direction is addressed. Boilerplate or a visibly ignored repository requirement is a failure.
