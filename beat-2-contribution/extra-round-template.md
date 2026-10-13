@@ -47,6 +47,8 @@ happened; these entries are the toolkit's own timeline.
 [2-4 sentences: what you built (the scout, your strategy), what broke
 or fell short, what changed because of it.]
 
+I began preparing for Assignment 5 by reviewing the contribution story template and identifying the required evidence. My next task is to locate my issue-scout, review its search strategy and rubric, and run a scan against real open-source issues. I have not yet recorded scan results or changed the scout's rubric because I need to inspect its current behavior first.
+
 ### Unit 6: [one line on the tool work]
 
 [2-4 sentences: what you built or changed (the voice-guard, your
