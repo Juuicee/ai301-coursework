@@ -78,6 +78,10 @@ honest read of the tool itself: where the scout fell short on a real
 wild search and what you changed or would change, or what convinced
 you it held up.]
 
+I chose MaterialX Issue #2024 because it focuses on improving the Python developer experience through automatically generated type-stub files. Stub files provide type information for Python packages when type hints are not available directly in the source code. They can help developers use type checking and code-completion tools more effectively. The issue suggests investigating tools such as MyPy's stubgen and possible ways to generate and distribute the resulting files.
+
+This issue interests me because it involves Python tooling, developer experience, and build automation. I want to investigate how well stub generation works with MaterialX's Python bindings, identify what type information is captured or missed, and determine a practical way to make the resulting stubs available to developers. Before deciding on a solution, I need to inspect the repository, check the current status of related work, and reproduce the proposed workflow.
+
 **Toolkit**
 - Tool: issue-scout (your scout: your search strategy, your rubric),
   and how you used it
