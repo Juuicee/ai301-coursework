@@ -1,8 +1,8 @@
-# Contribution: [Issue Title]
+# Contribution: MaterialX Issue #2024
 
 **Contribution Number:** [1]
-**Student:** [Student name]
-**Issue:** [GitHub issue link]
+**Student:** [Juuicee]
+**Issue:** [https://github.com/AcademySoftwareFoundation/MaterialX/issues/2024]
 **Pull Request:** [GitHub PR link, once opened]
 
 <!--
@@ -47,7 +47,7 @@ happened; these entries are the toolkit's own timeline.
 [2-4 sentences: what you built (the scout, your strategy), what broke
 or fell short, what changed because of it.]
 
-I began preparing for Assignment 5 by reviewing the contribution story template and identifying the required evidence. My next task is to locate my issue-scout, review its search strategy and rubric, and run a scan against real open-source issues. I have not yet recorded scan results or changed the scout's rubric because I need to inspect its current behavior first.
+I reviewed the Assignment 5 requirements and identified MaterialX Issue #2024 as my intended contribution. I still need to locate and run my issue-scout, record its verdict, and check whether the issue is suitable for my current skills. I have not yet verified a reproduction or modified the scout, so I will document those results after completing the work.
 
 ### Unit 6: [one line on the tool work]
 
