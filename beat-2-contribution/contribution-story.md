@@ -55,10 +55,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Preparing my GitHub issue-scout and search strategy**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I installed the issue-scout files in my Claude skills directory and restored the rubric and evidence guide from my course repository. I drafted a search strategy focused on Python development tools, type stubs, testing, and approachable open-source issues. I have not run the scout scan yet, so I cannot confirm whether the search results or rankings identify suitable issues. My next step is to test the queries, review the scout's verdicts, and document any corrections that are needed.
 
 **Unit 6: [one line on the tool work]**
 
