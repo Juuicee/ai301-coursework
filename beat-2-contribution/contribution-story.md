@@ -92,6 +92,8 @@ I chose MaterialX Issue #2024 because it focuses on automatically generating typ
 
 I chose to investigate this issue based on its description and its connection to my interests. I hope to learn how MaterialX exposes its Python API, how generated type stubs represent that API, and how those files could be maintained as the project changes. Before implementing a fix, I still need to inspect the repository, reproduce the relevant workflow, and determine which type information is missing or incorrect. 
 
+I am investigating MaterialX Issue #2024 as a Tech Fellow, so I am not posting a regular student claim comment. I will document my investigation, reproduction evidence, and technical findings as I work.
+
 **Toolkit**
 
 - Tool: issue-scout (your scout: your search strategy, your rubric),
