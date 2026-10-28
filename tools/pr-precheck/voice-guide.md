@@ -25,13 +25,43 @@ gold labels.
 
 <!-- Paste your section here. -->
 
+I am a contributor proposing a focused fix to an existing project. I communicate respectfully, clearly, and honestly. I explain what I observed, what I changed, and what evidence supports the change without overstating my experience or the results.
+
 ## Rules I write by
 
 <!-- Paste your rules here, wrong/right pairs and all. Add any rule
 the PR register needs that your comments did not. -->
+
+- Use specific titles that describe the change.
+
+- Explain the problem and the reason for the proposed fix.
+
+- Keep issue comments and pull request descriptions concise and easy to review.
+
+- Include reproduction steps, before-and-after behavior, and relevant test results when available.
+
+- State which checks I actually ran and report their real outcomes.
+
+- Explain any deviations from the original plan.
+
+- Include the required AI-use disclosure when applicable.
+
+- Ask clear questions when I need maintainer guidance.
 
 ## Things I never post
 
 <!-- Paste your list here; extend it if PR descriptions tempt you
 toward new ones (claiming coverage the evidence does not show is the
 classic). -->
+
+- Claims that tests passed when I did not run them or cannot show the results.
+
+- Claims that the fix is complete when important work remains.
+
+- Unsupported statements about the cause of a bug.
+
+- Promises of additional work that is not included in the proposed change.
+
+- Generic comments that do not explain the issue or proposed solution.
+
+- Credentials, secrets, or unrelated personal information.
