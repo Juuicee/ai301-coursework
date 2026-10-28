@@ -118,32 +118,35 @@ I hope to learn more about how nano-lmcache stores cache entries, how to build a
 
 [In your own words, what is broken or missing?]
 
-MaterialX's Python bindings would benefit from automatically generated type-stub files. These files can expose type information to editors and static type checkers, improving code completion and making the Python API easier to use. The issue raises the question of how to generate these stubs and distribute or maintain them. The exact gaps in the generated type information still need to be investigated.
+Nano-lmcache needs a command-line cache inspector that allows developers to examine a disk-cache directory without having to manually inspect the underlying cache files. The tool should make it easier to understand what is stored in the cache and provide a machine-readable option for users who want to process the results.
 
 **Expected Behavior**
 
 [What should happen?]
 
-Developers should have access to useful type-stub files for the MaterialX Python bindings so that compatible editors and type-checking tools can provide more accurate information about the available API. A successful solution should also establish a maintainable process for generating, updating, and distributing those files.
+A user should be able to run python -m nano_lmcache.inspect <directory> to inspect a cache directory. The command should also support a --json option to produce structured JSON output. The implementation should follow the issue's acceptance criteria and handle relevant input and error cases.
 
 **Current Behavior**
 
 [What actually happens?]
 
-The issue author reports that running a stub-generation tool on MaterialX appears to capture many types correctly, but the completeness of the output has not been established. The issue discusses possible approaches, including generating stubs during a GitHub Actions build, distributing them as artifacts or through PyPI, or committing generated files and completing missing type information manually.
+The issue identifies the cache-inspection CLI as a missing feature. Before implementing the change, I need to verify the current behavior by examining the existing cache-storage code and running the proposed command against a suitable cache directory.
 
 **Affected Components**
 
 [Which parts of the codebase are involved?]
 
-The likely areas to investigate are the MaterialX Python bindings, the generated stub files, the stub-generation tooling such as MyPy's stubgen, and the project's build and distribution workflows, including GitHub Actions and PyPI packaging. The specific files and functions involved remain to be identified through repository inspection.
+The likely areas to investigate are the nano_lmcache Python package, its disk-cache storage and entry-file format, and the proposed inspector module. I will trace the existing code to identify how cache entries can be read safely and how the command should format its output.
 
 **Toolkit**
 
-- Tool: GitHub issue description and manual analysis.
-- What it produced: A preliminary description of the problem, expected behavior, possible current limitations, and likely affected components.
-- Difficulties: The issue does not identify the exact missing type information, and I have not reproduced the generation workflow locally.
-- What changed: I separated the facts reported by the issue author from questions that still require local investigation.
+- Tool: GitHub issue tracker, repository source code, and Claude Code for code investigation.
+
+- What it produced: A preliminary understanding of the requested cache-inspection command and its JSON-output option.
+
+- Difficulties: The cache entry format and safe read-only inspection behavior need to be confirmed from the implementation.
+
+- What changed: I will verify the existing storage behavior and the issue's acceptance criteria before finalizing the implementation plan.
 
 ---
 
