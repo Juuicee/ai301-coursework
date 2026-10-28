@@ -69,6 +69,10 @@ it is true - say how you know.]
 [2-4 sentences: the ship-gate and your gate manifest. What it produced
 on your real branch, what fought you, what changed because of it.]
 
+Unit 7: Merge or Close
+
+In the Unit 7 Merge or Close activity, I reviewed pull requests and discussed whether each should be merged or closed. The activity helped me practice evaluating pull requests based on their changes, testing evidence, scope, and readiness before making a decision and better help students whenever they have any questions. The maintainer's feedback was discussed throughout the game and followed the practice PR on Day 4 to connect the exercise to the ship-gate workflow used.
+
 **Unit 8: [one line on the tool work]**
 
 [2-4 sentences: the PR-monitor and your playbook. What it read, what it
